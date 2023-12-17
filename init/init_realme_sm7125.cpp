@@ -111,4 +111,9 @@ void vendor_load_properties()
 
     property_override("ro.rising.chipset", "Qualcomm® Snapdragon™ 720G");
     property_override("ro.rising.maintainer", "Balay Bera");
+
+    property_override("ro.rising.storage", "128 GB");
+    property_override("ro.rising.ram", "6 GB");
+    property_override("ro.rising.display", "2400 x 1080");
+    property_override("ro.rising.battery", "4500 mAh");
 }
