@@ -19,7 +19,6 @@ package org.aospextended.device.misc;
 
 import android.os.Bundle;
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
-import com.android.settingslib.widget.R;
 
 public class MiscSettingsActivity extends CollapsingToolbarBaseActivity {
 
@@ -28,7 +27,7 @@ public class MiscSettingsActivity extends CollapsingToolbarBaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getFragmentManager().beginTransaction().replace(R.id.content_frame,
+        getFragmentManager().beginTransaction().replace(com.android.settingslib.collapsingtoolbar.R.id.content_frame,
                 new MiscSettingsFragment(), TAG_MISCSETTINGS).commit();
     }
 }
