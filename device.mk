@@ -86,6 +86,9 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
+# Bypass build time check for users-libs
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+
 # Call recording
 PRODUCT_PACKAGES += \
     com.google.android.apps.dialer.call_recording_audio.features.xml
